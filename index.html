@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counter Button</title>
 </head>
 <body>
-    <button>Click me please</button>
+    <button id="counterBtn">Click me please</button>
+    <span id="countDisplay">0</span>
+    <script>
+        let count = 0;
+        const button = document.getElementById('counterBtn');
+        const display = document.getElementById('countDisplay');
+        button.addEventListener('click', () => {
+            count++;
+            display.textContent = count;
+        });
+    </script>
 </body>
 </html>
