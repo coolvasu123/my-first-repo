@@ -19,3 +19,7 @@ button {
   border: 1px solid #ccc;
   cursor: pointer;
 }
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0b0b; color: #eee; }
+  button { border-color: #444; }
+}
