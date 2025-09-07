@@ -1,0 +1,21 @@
+body {
+  font-family: system-ui, Arial, sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: .5rem;
+}
+
+#count {
+  font-size: 2rem;
+  margin: .5rem 0 1rem;
+}
+
+button {
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
