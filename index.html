@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Counter Button</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Interactive Counter Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <button id="counterBtn">Click me please</button>
-    <span id="countDisplay">0</span>
-    <script>
-        let count = 0;
-        const button = document.getElementById('counterBtn');
-        const display = document.getElementById('countDisplay');
-        button.addEventListener('click', () => {
-            count++;
-            display.textContent = count;
-        });
-    </script>
+  <header class="site-header">
+    <img src="images/logo.svg" alt="Logo" id="logo">
+    <h1>Interactive Counter Demo</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="counter-row">
+        <button id="counterBtn" class="btn primary">Click me please</button>
+        <span id="countDisplay" class="count">0</span>
+      </div>
+
+      <div class="controls">
+        <button id="resetBtn" class="btn">Reset</button>
+        <button id="colorBtn" class="btn">Change Color</button>
+        <button id="randBtn" class="btn">Random #</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <label for="textInput">Type something:</label>
+      <input id="textInput" type="text" placeholder="Write here" />
+      <p>Echo: <span id="echo" class="echo"></span></p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

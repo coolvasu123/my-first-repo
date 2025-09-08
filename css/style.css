@@ -1,0 +1,62 @@
+/* Basic responsive layout and styles */
+:root{
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --accent: #0366d6;
+  --muted:#586069;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:#111;
+  -webkit-font-smoothing:antialiased;
+}
+.container{
+  max-width:800px;
+  margin:40px auto;
+  padding:0 16px;
+}
+.site-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:16px auto 0;
+  max-width:800px;
+  padding:0 16px;
+}
+#logo{width:48px;height:48px}
+h1{font-size:20px;margin:0;font-weight:600}
+.card{
+  background:var(--card);
+  border-radius:8px;
+  padding:16px;
+  box-shadow:0 2px 8px rgba(27,31,35,0.06);
+  margin-top:16px;
+}
+.counter-row{display:flex;align-items:center;gap:12px}
+.btn{
+  padding:8px 12px;
+  border-radius:6px;
+  border:1px solid rgba(27,31,35,0.08);
+  background:#fff;
+  cursor:pointer;
+  font-weight:600;
+}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.count{font-size:20px;font-weight:700;color:var(--accent)}
+.controls{margin-top:12px;display:flex;gap:8px}
+input[type="text"]{padding:8px;border-radius:6px;border:1px solid #d0d7de;width:100%;margin-top:8px}
+.echo{color:var(--muted)}
+
+/* Alternate color theme toggled by JS */
+body.alt-color{background:#0b1220;color:#e6eef8}
+body.alt-color .card{background:#0f1724}
+body.alt-color .btn{background:#111827;color:#e6eef8;border-color:rgba(255,255,255,0.06)}
+body.alt-color .btn.primary{background:#7c3aed}
+
+@media(min-width:640px){
+  .container{padding:0}
+}
