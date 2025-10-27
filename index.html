@@ -2,19 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Counter Button</title>
+    <title>Click Counter</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <button id="counterBtn">Click me please</button>
-    <span id="countDisplay">0</span>
-    <script>
-        let count = 0;
-        const button = document.getElementById('counterBtn');
-        const display = document.getElementById('countDisplay');
-        button.addEventListener('click', () => {
-            count++;
-            display.textContent = count;
-        });
-    </script>
+    <h1>Click Counter</h1>
+    <p id="count">0</p>
+    <button id="btn">Click me</button>
+    <script src="script.js"></script>
 </body>
 </html>
